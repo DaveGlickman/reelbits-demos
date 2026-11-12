@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#041f17" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Comet Charmers: a 5x5 sky-festival grid game with three heroine powers. Demo build with play money." />
+  <title>Comet Charmers</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 C82 18 86 66 50 96 C14 66 18 18 50 4 Z' fill='%23ffc531' stroke='%23ff2e88' stroke-width='8'/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="./assets/index-CRwHvhrP.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DFse1V6v.css">
+</head>
+<body>
+  <div id="app" class="game">
+    <div class="bg"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="cast" id="cast" aria-hidden="true"><img src="assets/cast.webp" alt=""></div>
+
+    <header class="top">
+      <button class="round" id="menuBtn" aria-label="Menu, rules and settings">☰</button>
+      <img class="logoimg" src="assets/logo.webp" alt="Comet Charmers">
+      <div class="right"><div class="session" id="session" title="Session time and net position">0:00</div><button class="round" id="soundBtn" aria-label="Sound on">🔊</button></div>
+    </header>
+
+    <main class="stage">
+      <section class="crew" id="crew" aria-label="The crew">
+        <div class="hero h0" data-h="0"><div class="port"></div><div class="hname">KIKO</div><div class="hpow">Charm Swap</div><div class="pip"></div></div>
+        <div class="hero h1" data-h="1"><div class="port"></div><div class="hname">SAFFI</div><div class="hpow">Comet Drop</div><div class="pip"></div></div>
+        <div class="hero h2" data-h="2"><div class="port"></div><div class="hname">MIRA</div><div class="hpow">Meteor Smash</div><div class="pip"></div></div>
+      </section>
+
+      <section class="statusbar">
+        <div class="ladder" id="ladder" aria-label="Win multiplier"></div>
+        <div class="fsbox hidden" id="fsbox"><span class="fslabel">COMET SPINS</span><span id="fscount">1 / 6</span></div>
+        <div class="canopy" id="canopy" aria-label="Sky lit"><span class="cl">SKY LIT</span><span id="litcount">0/25</span></div>
+      </section>
+
+      <div class="boardwrap"><div class="board" id="board"></div><div class="banner hidden" id="banner"></div></div>
+      <div class="message" id="message">&nbsp;</div>
+    </main>
+
+    <footer class="controls">
+      <div class="coins hidden" id="coins" role="group" aria-label="Choose coins">
+        <button data-c="GC" class="coin gc">Gold Coins <span></span></button>
+        <button data-c="SC" class="coin sc">Sweeps Coins <span></span></button>
+      </div>
+      <div class="meters">
+        <div class="meter"><span class="label" id="balLabel">Balance</span><span class="value" id="balance">-</span></div>
+        <div class="meter stake">
+          <button class="round small" id="stakeDown" aria-label="Lower">−</button>
+          <div><span class="label" id="stakeLabel">Bet</span><span class="value" id="stake">-</span></div>
+          <button class="round small" id="stakeUp" aria-label="Raise">+</button>
+        </div>
+        <div class="meter"><span class="label">Win</span><span class="value" id="win">-</span></div>
+      </div>
+      <div class="buttons">
+        <button class="pill hidden" id="buyBtn">BUY</button>
+        <button class="pill hidden" id="autoBtn" aria-label="Autoplay">AUTO</button>
+        <button class="spin" id="spinBtn" aria-label="Spin">SPIN</button>
+        <button class="pill hidden" id="turboBtn" aria-label="Turbo">TURBO</button>
+        <button class="pill" id="histBtn" aria-label="History">HISTORY</button>
+      </div>
+      <div class="legal" id="legal"></div>
+    </footer>
+
+    <div class="splash hidden" id="splash"><div class="sp-port"></div><div class="sp-text"><div class="sp-name"></div><div class="sp-shout"></div></div></div>
+    <div class="bigwin hidden" id="bigwin"><div class="bw-title"></div><div class="bw-amount"></div><div class="bw-hint">tap to skip</div></div>
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="sheet"><button class="close" aria-label="Close">✕</button><div class="content"></div></div></div>
+  </div>
+</body>
+</html>

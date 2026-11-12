@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d6f86" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Harbour Haul: a 5x3 fish-collect slot. Art draft demo with play money." />
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  <link rel="preload" href="./assets/logo.webp" as="image" />
+  <title>Harbour Haul</title>
+  <script type="module" crossorigin src="./assets/index-Bcxq3ks5.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Dh-psG_X.css">
+</head>
+<body>
+  <div id="app" class="game">
+    <div class="sky"><span></span><span></span><span></span></div>
+
+    <header class="top">
+      <button class="round" id="menuBtn" aria-label="Menu, rules and settings">☰</button>
+      <img class="logo" src="./assets/logo.webp" alt="Harbour Haul" width="900" height="600" draggable="false" />
+      <div class="right"><div class="session" id="session" title="This session">0:00</div><button class="round" id="soundBtn" aria-label="Sound on">🔊</button></div>
+    </header>
+
+    <main class="stage">
+      <div class="fsbar hidden" id="fsbar">
+        <div class="fsname">FEEDING TIME</div>
+        <div class="fsstat"><span>Spins left</span><b id="fsLeft">10</b></div>
+        <div class="fsstat"><span>Rosa</span><b id="fsGus">0</b></div>
+        <div class="fsstat mult"><span>Multiplier</span><b id="fsMult">x1</b></div>
+      </div>
+      <div class="boardwrap"><div class="board" id="board"></div></div>
+      <div class="message" id="message">&nbsp;</div>
+    </main>
+
+    <footer class="controls">
+      <div class="coins hidden" id="coins" role="group" aria-label="Choose coins">
+        <button data-c="GC" class="coin gc">Gold Coins <span></span></button>
+        <button data-c="SC" class="coin sc">Sweeps Coins <span></span></button>
+      </div>
+      <div class="meters">
+        <div class="meter"><span class="label" id="balLabel">Balance</span><span class="value" id="balance">-</span><span class="cur" id="curName"></span></div>
+        <div class="meter stake">
+          <button class="round small" id="stakeDown" aria-label="Lower">−</button>
+          <div><span class="label" id="stakeLabel">Bet</span><span class="value" id="stake">-</span></div>
+          <button class="round small" id="stakeUp" aria-label="Raise">+</button>
+        </div>
+        <div class="meter"><span class="label">Win</span><span class="value" id="win">-</span></div>
+      </div>
+      <div class="buttons">
+        <button class="pill hidden" id="buyBtn">BUY</button>
+        <button class="pill hidden" id="autoBtn" aria-label="Autoplay">AUTO</button>
+        <button class="spin" id="spinBtn" aria-label="Spin">SPIN</button>
+        <button class="pill hidden" id="turboBtn" aria-label="Turbo">TURBO</button>
+        <button class="pill" id="exitBtn" aria-label="Leave game">EXIT</button>
+      </div>
+      <div class="legal" id="legal"></div>
+    </footer>
+
+    <img class="hero hidden" id="hero" alt="" />
+    <div class="banner hidden" id="banner"></div>
+    <div class="bigwin hidden" id="bigwin"><img class="bw-rosa" alt="" /><div class="bw-title"></div><div class="bw-amount"></div><div class="bw-hint">tap to skip</div></div>
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="sheet"><button class="close" aria-label="Close">✕</button><div class="content"></div></div></div>
+  </div>
+</body>
+</html>
