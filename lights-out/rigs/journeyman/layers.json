@@ -1,0 +1,237 @@
+{
+ "layers": [
+  {
+   "name": "farArm",
+   "x": 575,
+   "y": 424,
+   "w": 247,
+   "h": 521
+  },
+  {
+   "name": "farLeg",
+   "x": 240,
+   "y": 887,
+   "w": 259,
+   "h": 625
+  },
+  {
+   "name": "nearLeg",
+   "x": 470,
+   "y": 888,
+   "w": 283,
+   "h": 613
+  },
+  {
+   "name": "body",
+   "x": 302,
+   "y": 0,
+   "w": 366,
+   "h": 977
+  },
+  {
+   "name": "nearArm",
+   "x": 204,
+   "y": 295,
+   "w": 242,
+   "h": 652
+  }
+ ],
+ "faces": [
+  {
+   "name": "hurt",
+   "x": 365,
+   "y": 8,
+   "w": 273,
+   "h": 310,
+   "bone": "head"
+  }
+ ],
+ "bones": {
+  "pelvis": {
+   "head": [
+    500,
+    850
+   ],
+   "tail": [
+    500,
+    640
+   ],
+   "parent": null,
+   "layers": [
+    "body"
+   ]
+  },
+  "spine": {
+   "head": [
+    500,
+    640
+   ],
+   "tail": [
+    485,
+    290
+   ],
+   "parent": "pelvis",
+   "layers": [
+    "body"
+   ]
+  },
+  "head": {
+   "head": [
+    485,
+    290
+   ],
+   "tail": [
+    510,
+    40
+   ],
+   "parent": "spine",
+   "layers": [
+    "body"
+   ]
+  },
+  "nShoulder": {
+   "head": [
+    300,
+    330
+   ],
+   "tail": [
+    440,
+    345
+   ],
+   "parent": "spine",
+   "layers": [
+    "nearArm"
+   ]
+  },
+  "nUpper": {
+   "head": [
+    370,
+    370
+   ],
+   "tail": [
+    245,
+    600
+   ],
+   "parent": "spine",
+   "layers": [
+    "nearArm"
+   ]
+  },
+  "nFore": {
+   "head": [
+    245,
+    600
+   ],
+   "tail": [
+    300,
+    840
+   ],
+   "parent": "nUpper",
+   "layers": [
+    "nearArm"
+   ]
+  },
+  "fShoulder": {
+   "head": [
+    600,
+    440
+   ],
+   "tail": [
+    640,
+    455
+   ],
+   "parent": "spine",
+   "layers": [
+    "farArm"
+   ]
+  },
+  "fUpper": {
+   "head": [
+    610,
+    470
+   ],
+   "tail": [
+    670,
+    640
+   ],
+   "parent": "spine",
+   "layers": [
+    "farArm"
+   ]
+  },
+  "fFore": {
+   "head": [
+    670,
+    640
+   ],
+   "tail": [
+    735,
+    840
+   ],
+   "parent": "fUpper",
+   "layers": [
+    "farArm"
+   ]
+  },
+  "fThigh": {
+   "head": [
+    430,
+    920
+   ],
+   "tail": [
+    400,
+    1075
+   ],
+   "parent": "pelvis",
+   "layers": [
+    "farLeg"
+   ]
+  },
+  "fShin": {
+   "head": [
+    400,
+    1075
+   ],
+   "tail": [
+    340,
+    1330
+   ],
+   "parent": "fThigh",
+   "layers": [
+    "farLeg"
+   ]
+  },
+  "nThigh": {
+   "head": [
+    560,
+    920
+   ],
+   "tail": [
+    568,
+    1085
+   ],
+   "parent": "pelvis",
+   "layers": [
+    "nearLeg"
+   ]
+  },
+  "nShin": {
+   "head": [
+    568,
+    1085
+   ],
+   "tail": [
+    548,
+    1330
+   ],
+   "parent": "nThigh",
+   "layers": [
+    "nearLeg"
+   ]
+  }
+ },
+ "size": [
+  1024,
+  1536
+ ]
+}
