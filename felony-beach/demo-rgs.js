@@ -10,7 +10,7 @@
     history.replaceState(null, '', location.pathname + '?' + q.toString());
   }
   var LEVELS = [0.1, 0.2, 0.4, 0.6, 0.8, 1, 2, 4, 6, 8, 10, 20, 50, 100].map(function (v) { return Math.round(v * 1e6); });
-  var MODES = [['STREET', 1], ['POLICE_SCANNER', 1.25], ['CHOP_SHOP', 60], ['THE_GETAWAY', 100], ['FREEWAY', 250], ['MOST_WANTED', 500]];
+  var MODES = [['STREET', 1], ['POLICE_SCANNER', 1.5], ['CHOP_SHOP', 60], ['THE_GETAWAY', 100], ['FREEWAY', 250], ['MOST_WANTED', 500]];
   var s = { balance: 10000e6, round: null, betID: 1 }, cache = {}, realFetch = window.fetch.bind(window);
   function load(mode) {
     if (!cache[mode]) cache[mode] = realFetch('./rounds/' + mode + '.json').then(function (r) { return r.json(); }).then(function (d) {
