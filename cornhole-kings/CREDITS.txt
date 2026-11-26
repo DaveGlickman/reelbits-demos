@@ -1,0 +1,6 @@
+Cornhole Kings - credits
+Art: made for this game (AI image generation through Reelbit's own account; output owned by Reelbit).
+Sound: all CC0 1.0 (public domain) - Freesound.org recordings (crowd, tuba, dog barks, grill, horns and more) and Kenney
+sound packs (kenney.nl). No attribution required; list of sources kept with the game.
+Fonts: Fredoka and Lilita One, SIL Open Font License 1.1 (see assets/Fredoka-OFL.txt and assets/LilitaOne-OFL.txt).
+Physics: Planck.js (MIT licence).

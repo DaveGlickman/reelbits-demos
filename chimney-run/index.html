@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<script src="./demo-rgs.js"></script>
+<title>Chimney Run</title>
+  <script type="module" crossorigin src="./assets/index-C9ke6N67.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/CanvasPool-BR5kto0o.js">
+  <link rel="modulepreload" crossorigin href="./assets/Filter-C5B7svGO.js">
+  <link rel="modulepreload" crossorigin href="./assets/canvasUtils-DH0NY7Hl.js">
+  <link rel="modulepreload" crossorigin href="./assets/Cache-_5BhTA8s.js">
+  <link rel="modulepreload" crossorigin href="./assets/FilterSystem-UkPE-9JM.js">
+  <link rel="modulepreload" crossorigin href="./assets/FederatedEventTarget-DYwQVLo0.js">
+  <link rel="modulepreload" crossorigin href="./assets/GCManagedHash-D5sJn0uG.js">
+  <link rel="modulepreload" crossorigin href="./assets/RenderTargetSystem-CscylXVQ.js">
+  <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-D0ajxLx6.js">
+  <link rel="modulepreload" crossorigin href="./assets/GraphicsContext-BxKwvmRb.js">
+  <link rel="modulepreload" crossorigin href="./assets/CanvasRenderer-B7kLREOJ.js">
+  <link rel="modulepreload" crossorigin href="./assets/getTexelRangeRects-DUwTFHuS.js">
+  <link rel="modulepreload" crossorigin href="./assets/BitmapFont-Be4VBHa3.js">
+  <link rel="modulepreload" crossorigin href="./assets/WebGLRenderer-CkwrVOc7.js">
+  <link rel="modulepreload" crossorigin href="./assets/WebGPURenderer-C039X_TJ.js">
+  <link rel="modulepreload" crossorigin href="./assets/index-Di7LQgk_.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-9XW18EJy.css">
+</head>
+<body>
+<div id="stage"></div>
+<div id="splash"><img id="logo" src="./ui/logo.webp" alt="Chimney Run"><div id="loadbar"><i></i></div><button id="start" class="hide">TAP TO START</button></div>
+<div id="hud">
+  <div id="sacks">
+    <button data-m="STOCKING_FILLERS" class="sl"><img src="./ui/sack_s.webp" alt=""><span><b></b><small></small></span></button>
+    <button data-m="TOY_SACK" class="sl on"><img src="./ui/sack_m.webp" alt=""><span><b></b><small></small></span></button>
+    <button data-m="THE_BIG_ONE" class="sl"><img src="./ui/sack_l.webp" alt=""><span><b></b><small></small></span></button>
+  </div>
+  <div id="corner">
+    <button id="menu" class="ico"><i></i><span id="t_menu">MENU</span></button>
+    <button id="snd" class="ico"><i></i><span id="t_sound">SOUND</span></button>
+  </div>
+  <div id="bar">
+    <div class="grp left">
+      <div class="val balv"><span class="lab" id="t_balance">BALANCE</span><span id="bal">—</span></div>
+      <div class="val bet">
+        <span class="lab" id="t_bet">BET</span>
+        <div class="betrow"><button id="minus" class="rb" aria-label="lower"></button><span id="bet">—</span><button id="plus" class="rb" aria-label="raise"></button></div>
+      </div>
+      <button id="buy" class="ico big"><i></i><span id="t_bonus">BUY BONUS</span></button>
+    </div>
+    <div class="val win"><span class="lab" id="t_win">WIN</span><span id="win">0.00</span></div>
+    <div class="grp right">
+      <button id="turbo" class="ico"><i></i><span id="t_turbo">TURBO</span></button>
+      <button id="play" aria-label="play"><span id="t_play">PLAY</span></button>
+      <button id="auto" class="ico"><i></i><span id="t_auto">AUTO</span></button>
+    </div>
+  </div>
+  <div id="replaytag"></div>
+  <button id="again" class="hide">PLAY AGAIN</button>
+</div>
+<div id="fork" class="hide"><div class="fhead"></div><div class="frow"><button id="forkL" class="sl fk"><span><b></b><small></small></span></button><button id="forkR" class="sl fk"><span><b></b><small></small></span></button></div></div>
+<div id="pop" class="hide">
+  <div class="panel">
+    <button class="x" id="popx" aria-label="close"></button>
+    <h2 id="poph"></h2>
+    <div id="popb"></div>
+  </div>
+</div>
+</body>
+</html>

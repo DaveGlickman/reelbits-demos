@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<script src="./demo-rgs.js"></script>
+<title>Rebound Ricky</title>
+<link rel="icon" href="data:,">
+  <script type="module" crossorigin src="./assets/index-DCCl800m.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/CanvasPool-CRcJWB4B.js">
+  <link rel="modulepreload" crossorigin href="./assets/State-gsIFQEBV.js">
+  <link rel="modulepreload" crossorigin href="./assets/canvasUtils-Dwt5wapU.js">
+  <link rel="modulepreload" crossorigin href="./assets/Cache-gowapETd.js">
+  <link rel="modulepreload" crossorigin href="./assets/getPo2TextureFromSource-DF1qRh4m.js">
+  <link rel="modulepreload" crossorigin href="./assets/GCManagedHash-p41BEbUm.js">
+  <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-CY8849TR.js">
+  <link rel="modulepreload" crossorigin href="./assets/GraphicsContext-Bj7iqiXE.js">
+  <link rel="modulepreload" crossorigin href="./assets/BatchableSprite-BeSk_KKi.js">
+  <link rel="modulepreload" crossorigin href="./assets/Graphics-BSG3uAxB.js">
+  <link rel="modulepreload" crossorigin href="./assets/TextStyle-CyfGBA_8.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-7cSpmmwi.css">
+</head>
+<body>
+<div id="stage"></div>
+<div id="splash"><img id="logo" src="./ui/logo.webp" alt="Rebound Ricky"><div id="loadbar"><i></i></div><button id="start" class="hide">TAP TO START</button></div>
+<div id="hud">
+  <div id="throws">
+    <button data-m="LOB" class="sl"><img src="./art/bubble.webp" alt=""><span><b></b><small></small></span></button>
+    <button data-m="BOUNCE_SHOT" class="sl on"><img src="./art/ball.webp" alt=""><span><b></b><small></small></span></button>
+    <button data-m="FASTBALL" class="sl"><img src="./art/hot.webp" alt=""><span><b></b><small></small></span></button>
+  </div>
+  <div id="corner">
+    <button id="menu" class="ico"><i></i><span id="t_menu">MENU</span></button>
+    <button id="snd" class="ico"><i></i><span id="t_sound">SOUND</span></button>
+  </div>
+  <div id="aim" class="hide"><div id="aimhint"></div><button data-a="0">HIGH</button><button data-a="1">MIDDLE</button><button data-a="2">LOW</button></div>
+  <div id="pick" class="hide"><div class="pt"></div><button data-p="flamingo">FLAMINGO</button><button data-p="donut">DONUT</button></div>
+  <div id="bar">
+    <div class="grp left">
+      <div class="val balv"><span class="lab" id="t_balance">BALANCE</span><span id="bal">—</span></div>
+      <div class="val bet">
+        <span class="lab" id="t_bet">BET</span>
+        <div class="betrow"><button id="minus" class="rb" aria-label="lower"></button><span id="bet">—</span><button id="plus" class="rb" aria-label="raise"></button></div>
+      </div>
+      <button id="buy" class="ico big"><i></i><span id="t_bonus">BUY BONUS</span></button>
+    </div>
+    <div class="val win"><span class="lab" id="t_win">WIN</span><span id="win">0.00</span></div>
+    <div class="grp right">
+      <button id="turbo" class="ico"><i></i><span id="t_turbo">TURBO</span></button>
+      <button id="play" aria-label="play"><span id="t_play">PLAY</span></button>
+      <button id="auto" class="ico"><i></i><span id="t_auto">AUTO</span></button>
+    </div>
+  </div>
+  <div id="replaytag"></div>
+  <button id="again" class="hide">PLAY AGAIN</button>
+</div>
+<div id="pop" class="hide">
+  <div class="panel">
+    <button class="x" id="popx" aria-label="close"></button>
+    <h2 id="poph"></h2>
+    <div id="popb"></div>
+  </div>
+</div>
+</body>
+</html>

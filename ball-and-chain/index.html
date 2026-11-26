@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<script src="./demo-rgs.js"></script>
+<title>Ball &amp; Chain</title>
+<link rel="icon" href="data:,">
+  <script type="module" crossorigin src="./assets/index-D7vBX2NZ.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/CanvasPool-D3PI5lcX.js">
+  <link rel="modulepreload" crossorigin href="./assets/State-zA_8ddAa.js">
+  <link rel="modulepreload" crossorigin href="./assets/canvasUtils-vOBrG10K.js">
+  <link rel="modulepreload" crossorigin href="./assets/Cache-Bi4mRQss.js">
+  <link rel="modulepreload" crossorigin href="./assets/getPo2TextureFromSource-ByLGo2OI.js">
+  <link rel="modulepreload" crossorigin href="./assets/GCManagedHash-BtkVkflu.js">
+  <link rel="modulepreload" crossorigin href="./assets/BatchableSprite-Cd554op1.js">
+  <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-BaLFH5qT.js">
+  <link rel="modulepreload" crossorigin href="./assets/GraphicsContext-C9uHiLxS.js">
+  <link rel="modulepreload" crossorigin href="./assets/Graphics-pj3hPHd1.js">
+  <link rel="modulepreload" crossorigin href="./assets/localUniformBit-BOGrcT1E.js">
+  <link rel="modulepreload" crossorigin href="./assets/TextStyle-CrJPIxtT.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-BPk8Hsxe.css">
+</head>
+<body>
+<div id="stage"></div>
+<div id="splash"><img id="logo" src="./ui/logo.webp" alt="Ball &amp; Chain"><div id="loadbar"><i></i><img id="loadball" src="./art/ball.webp" alt=""></div><button id="start" class="hide">TAP TO START</button></div>
+<div id="hud">
+  <div id="sign"><i class="cab l"></i><i class="cab r"></i><span class="lab" id="t_total">IN THE SKIPS</span><span id="total">0.00X</span><span id="mults"></span></div>
+  <div id="slopes">
+    <button data-m="GROUND_FLOORS" class="sl"><b></b><small></small></button>
+    <button data-m="MIDDLE_FLOORS" class="sl on"><b></b><small></small></button>
+    <button data-m="PENTHOUSE_LEVEL" class="sl"><b></b><small></small></button>
+  </div>
+  <div id="corner">
+    <button id="menu" class="ico"><img src="./ui/ui_menu.webp" alt=""><span id="t_menu">MENU</span></button>
+    <button id="snd" class="ico"><img src="./ui/ui_sound.webp" alt=""><span id="t_sound">SOUND</span></button>
+  </div>
+  <div id="prompt"></div>
+  <div id="bar">
+    <div class="grp left">
+      <div class="val balv"><span class="lab" id="t_balance">BALANCE</span><span id="bal">—</span></div>
+      <div class="val bet">
+        <span class="lab" id="t_bet">BET</span>
+        <div class="betrow"><button id="minus" class="rb" aria-label="lower"><img src="./ui/ui_minus.webp" alt=""></button><span id="bet">—</span><button id="plus" class="rb" aria-label="raise"><img src="./ui/ui_plus.webp" alt=""></button></div>
+      </div>
+    </div>
+    <div class="val win"><span class="lab" id="t_win">WIN</span><span id="win">0.00</span></div>
+    <div class="grp right">
+      <button id="buy" class="ico"><img src="./ui/ui_bonus.webp" alt=""><span id="t_bonus">BUY BONUS</span></button>
+      <button id="turbo" class="ico"><img src="./ui/ui_turbo.webp" alt=""><span id="t_turbo">TURBO</span></button>
+      <button id="play" aria-label="play"><img class="up" src="./ui/ui_play.webp" alt=""><img class="down" src="./ui/ui_play_down.webp" alt=""></button>
+      <button id="auto" class="ico"><img src="./ui/ui_auto.webp" alt=""><span id="t_auto">AUTO</span></button>
+    </div>
+  </div>
+  <div id="replaytag"></div>
+  <button id="again" class="hide">PLAY AGAIN</button>
+</div>
+<div id="pop" class="hide">
+  <div class="panel">
+    <button class="x" id="popx" aria-label="close"><img src="./ui/ui_close.webp" alt=""></button>
+    <h2 id="poph"></h2>
+    <div id="popb"></div>
+  </div>
+</div>
+</body>
+</html>

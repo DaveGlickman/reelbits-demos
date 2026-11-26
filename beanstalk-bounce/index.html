@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:,">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<script src="./demo-rgs.js"></script>
+<title>Beanstalk Bounce</title>
+  <script type="module" crossorigin src="./assets/index-BwFAATEB.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/CanvasPool-BR4RsMjk.js">
+  <link rel="modulepreload" crossorigin href="./assets/State-DNGhvdai.js">
+  <link rel="modulepreload" crossorigin href="./assets/canvasUtils-JrWQK-Sc.js">
+  <link rel="modulepreload" crossorigin href="./assets/Cache-CbkptCv5.js">
+  <link rel="modulepreload" crossorigin href="./assets/getPo2TextureFromSource-CAQ7f7uG.js">
+  <link rel="modulepreload" crossorigin href="./assets/GCManagedHash-C0he3mtg.js">
+  <link rel="modulepreload" crossorigin href="./assets/BatchableSprite-BuJvAQuj.js">
+  <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-t3s9o3-L.js">
+  <link rel="modulepreload" crossorigin href="./assets/GraphicsContext-BDrG3Jt-.js">
+  <link rel="modulepreload" crossorigin href="./assets/localUniformBit-BOGrcT1E.js">
+  <link rel="modulepreload" crossorigin href="./assets/TextStyle-DUk4rh2g.js">
+  <link rel="modulepreload" crossorigin href="./assets/Graphics-C6p03UnY.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-C_x9GV9Q.css">
+</head>
+<body>
+<div id="stage"></div>
+<div id="splash"><img id="logo" src="./ui/logo.webp" alt="Beanstalk Bounce"><div id="loadbar"><i></i></div><button id="start" class="hide">TAP TO START</button></div>
+<div id="hud">
+  <div id="sign"><span class="lab" id="t_total">TOTAL</span><span id="total">0.00X</span><span id="mults"></span><span id="banked"></span></div>
+  <div id="kinds">
+    <button data-m="GREEN_BEANS" class="sl"><b></b><small></small></button>
+    <button data-m="MAGIC_BEANS" class="sl on"><b></b><small></small></button>
+    <button data-m="GOLDEN_BEANS" class="sl"><b></b><small></small></button>
+  </div>
+  <div id="meter"><span class="castle" id="t_castle">CASTLE</span><i></i><b></b><em id="meterlab"></em></div>
+  <div id="corner">
+    <button id="menu" class="ico"><img src="./ui/ui_menu.webp" alt=""><span id="t_menu">MENU</span></button>
+    <button id="snd" class="ico"><img id="sndi" src="./ui/ui_sound.webp" alt=""><span id="t_sound">SOUND</span></button>
+  </div>
+  <button id="jump" class="hide" aria-label="jump"><img src="./ui/ui_jump.webp" alt=""><img class="jw" src="./art/w_jump.webp" alt=""><span id="t_jump" hidden>JUMP!</span></button>
+  <div id="eggtitle" class="val hide"><span id="t_pick">PICK AN EGG</span></div>
+  <div id="eggs" class="hide"><button id="egg0">LEFT</button><button id="egg1">RIGHT</button></div>
+  <div id="stalktitle" class="hide"><img src="./art/w_pickstalk.webp" alt=""><span id="t_stalk" hidden>PICK A BEANSTALK</span></div>
+  <div id="stalks" class="hide"><button id="stalk0" aria-label="left"><img src="./art/w_left.webp" alt=""><span hidden>LEFT</span></button><button id="stalk1" aria-label="middle"><img src="./art/w_middle.webp" alt=""><span hidden>MIDDLE</span></button><button id="stalk2" aria-label="right"><img src="./art/w_right.webp" alt=""><span hidden>RIGHT</span></button></div>
+  <div id="bar">
+    <div class="grp left">
+      <div class="val balv"><span class="lab" id="t_balance">BALANCE</span><span id="bal">—</span></div>
+      <div class="val bet">
+        <span class="lab" id="t_bet">BET</span>
+        <div class="betrow"><button id="minus" class="rb" aria-label="lower"><img src="./ui/ui_minus.webp" alt=""></button><span id="bet">—</span><button id="plus" class="rb" aria-label="raise"><img src="./ui/ui_plus.webp" alt=""></button></div>
+      </div>
+      <button id="buy" class="ico"><img src="./ui/ui_bonus.webp" alt=""><span id="t_bonus">BUY BONUS</span></button>
+    </div>
+    <div class="val win"><span class="lab" id="t_win">WIN</span><span id="win">0.00</span></div>
+    <div class="grp right">
+      <button id="turbo" class="ico"><img src="./ui/ui_turbo.webp" alt=""><span id="t_turbo">TURBO</span></button>
+      <button id="play" aria-label="play"><img class="up" src="./ui/ui_play.webp" alt=""><img class="down" src="./ui/ui_play_down.webp" alt=""></button>
+      <button id="auto" class="ico"><img src="./ui/ui_auto.webp" alt=""><span id="t_auto">AUTO</span></button>
+    </div>
+  </div>
+  <div id="replaytag"></div>
+  <button id="again" class="hide">PLAY AGAIN</button>
+</div>
+<div id="pop" class="hide">
+  <div class="panel">
+    <button class="x" id="popx" aria-label="close"><img src="./ui/ui_close.webp" alt=""></button>
+    <h2 id="poph"></h2>
+    <div id="popb"></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Swish! - credits
+Art: made for this game (image generation through Reelbit's own account; output owned by the studio, commercial use allowed).
+Sound: all CC0 1.0 (public domain): 43 Freesound recordings and Kenney audio packs (kenney.nl), edited for the game.
+Font: Lilita One by Juan Montoreano, SIL Open Font License 1.1 (see Lilita-One-OFL.txt).

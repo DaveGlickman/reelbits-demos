@@ -1,0 +1,5 @@
+Beanstalk Bounce - credits
+Art: made for this game (AI image generation, output owned by Reelbit; see the game's art/ART_SOURCES.md).
+Sound: all CC0 1.0 (public domain): effects and music loops from Freesound.org (CC0 filter, each page checked) and Kenney (kenney.nl).
+Fonts: Fredoka and Lilita One, SIL Open Font License 1.1 (see Fredoka-OFL.txt and LilitaOne-OFL.txt).
+Physics: Planck.js (MIT licence), bundled in the game code. Renderer: PixiJS (MIT licence).

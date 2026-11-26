@@ -1,0 +1,6 @@
+Handle With Care - credits
+Art: made for this game (ChatGPT image generation on Reelbit's own account; one flat cartoon style throughout).
+Music: "Sea side Village" and "Bossa Town" by KarateStudios (OpenGameArt.org), CC0 1.0.
+Sound: all CC0 1.0 (public domain): recordings from OpenGameArt.org and Freesound.org (gulls, cats, dog, splashes, wind,
+door slam, crowd cheer, bell, cardboard drops), Kenney impact, interface and music-jingle packs (kenney.nl), and other CC0 effects.
+Fonts: Fredoka and Lilita One, SIL Open Font License 1.1 (see fonts/FREDOKA_OFL.txt and fonts/LILITA_OFL.txt).
