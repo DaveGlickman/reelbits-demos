@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="icon" href="data:,">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<script src="./demo-rgs.js"></script>
+<title>Big Top Blast</title>
+  <script type="module" crossorigin src="./assets/index-D_ZpTMDj.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/CanvasPool-D5WtVn4H.js">
+  <link rel="modulepreload" crossorigin href="./assets/Filter-iIS9pILi.js">
+  <link rel="modulepreload" crossorigin href="./assets/canvasUtils-D0_vml_s.js">
+  <link rel="modulepreload" crossorigin href="./assets/Cache-CZQnldaB.js">
+  <link rel="modulepreload" crossorigin href="./assets/defaultFilter.vert-MIJyaD81.js">
+  <link rel="modulepreload" crossorigin href="./assets/GCManagedHash-Cctz6yTZ.js">
+  <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-DnuWMT7a.js">
+  <link rel="modulepreload" crossorigin href="./assets/GraphicsContext-Awp8aK8R.js">
+  <link rel="modulepreload" crossorigin href="./assets/BatchableSprite-DC2HCc-B.js">
+  <link rel="modulepreload" crossorigin href="./assets/TextStyle-D6FXRocJ.js">
+  <link rel="modulepreload" crossorigin href="./assets/localUniformBit-BOGrcT1E.js">
+  <link rel="modulepreload" crossorigin href="./assets/Graphics-DelSV-6W.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-PKMUYd7H.css">
+</head>
+<body>
+<div id="stage"></div>
+<div id="splash"><img id="logo" src="./ui/logo.webp" alt="Big Top Blast"><div id="loadbar"><i></i></div><button id="start" class="hide">TAP TO START</button></div>
+<div id="hud">
+  <div id="sign"><span class="lab" id="t_total">TOTAL</span><span id="total">0.00X</span><span id="mults"></span></div>
+  <div id="kinds"><div id="t_kinds" class="kh">CHOOSE YOUR CANNON</div>
+    <button data-m="POPGUN" class="sl"><img class="kb" src="./art/barrel_pop.webp" alt=""><b></b><small></small></button>
+    <button data-m="CANNON" class="sl on"><img class="kb" src="./art/barrel.webp" alt=""><b></b><small></small></button>
+    <button data-m="BIG_BERTHA" class="sl"><img class="kb" src="./art/barrel_bertha.webp" alt=""><b></b><small></small></button>
+  </div>
+  <div id="aim"><button id="aimDown" class="rb arrow" aria-label="aim lower"><img src="./ui/ui_up.webp" alt="" style="transform:scaleY(-1)"></button><span class="lab"><span id="t_aim">AIM</span> <b id="zoneName">MID</b></span><button id="aimUp" class="rb arrow" aria-label="aim higher"><img src="./ui/ui_up.webp" alt=""></button></div>
+  <div id="corner">
+    <button id="menu" class="ico"><img src="./ui/ui_menu.webp" alt=""><span id="t_menu">MENU</span></button>
+    <button id="snd" class="ico"><img id="sndi" src="./ui/ui_sound.webp" alt=""><span id="t_sound">SOUND</span></button>
+  </div>
+  <div id="choice" class="hide"><div class="chq"><span id="t_choose">THE RINGMASTER OFFERS</span></div>
+    <button id="pickHigher" class="pick"><img src="./art/barrel.webp" alt=""><b id="t_higher">HIGHER</b><small id="t_higher2">bigger charge, huge arcs</small></button>
+    <button id="pickHotter" class="pick"><img src="./art/flame_2.webp" alt=""><b id="t_hotter">HOTTER</b><small id="t_hotter2">flaming hoops everywhere</small></button></div>
+  <button id="tuck" class="hide"><span id="t_tuck">TUCK!</span></button>
+  <div id="bar">
+    <div class="grp left">
+      <div class="val balv"><span class="lab" id="t_balance">BALANCE</span><span id="bal">—</span></div>
+      <div class="val bet">
+        <span class="lab" id="t_bet">BET</span>
+        <div class="betrow"><button id="minus" class="rb" aria-label="lower"><img src="./ui/ui_minus.webp" alt=""></button><span id="bet">—</span><button id="plus" class="rb" aria-label="raise"><img src="./ui/ui_plus.webp" alt=""></button></div>
+      </div>
+      <button id="buy" class="ico"><img src="./ui/ui_bonus.webp" alt=""><span id="t_bonus">BUY BONUS</span></button>
+    </div>
+    <div class="val win"><span class="lab" id="t_win">WIN</span><span id="win">0.00</span></div>
+    <div class="grp right">
+      <button id="turbo" class="ico"><img src="./ui/ui_turbo.webp" alt=""><span id="t_turbo">TURBO</span></button>
+      <button id="play" aria-label="fire"><img class="up" src="./ui/ui_play.webp" alt=""><img class="down" src="./ui/ui_play_down.webp" alt=""><span id="t_play">FIRE</span></button>
+      <button id="auto" class="ico"><img src="./ui/ui_auto.webp" alt=""><span id="t_auto">AUTO</span></button>
+    </div>
+  </div>
+  <div id="replaytag"></div>
+  <button id="again" class="hide">PLAY AGAIN</button>
+</div>
+<div id="pop" class="hide">
+  <div class="panel">
+    <button class="x" id="popx" aria-label="close"><img src="./ui/ui_close.webp" alt=""></button>
+    <h2 id="poph"></h2>
+    <div id="popb"></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Sink & Drink - credits
+Art and character animation: made for this game (HeyGen image and image-to-video, Reelbit's own account).
+Sound: all CC0 1.0 (public domain): "Medieval: The Old Tower Inn" by RandomMind and "Crowded Pub" by Bobjt (OpenGameArt.org),
+Kenney impact sounds (kenney.nl), and other CC0 effects.
+Font: Fredoka, SIL Open Font License 1.1 (see Fredoka-OFL.txt).
